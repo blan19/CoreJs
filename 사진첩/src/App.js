@@ -2,6 +2,7 @@ import Nodes from './components/Nodes';
 import Breadcrumb from './components/Breadcrumb';
 import api from './utils/api';
 import ImageView from './components/ImageView';
+import cashes from './utils/cashes';
 
 class App {
   constructor({ $app }) {
@@ -86,6 +87,7 @@ class App {
   async init() {
     try {
       const rootNodes = await api.getByAll();
+      cashes.root = rootNodes;
       this.setState({ ...this.state, isRoot: true, nodes: rootNodes });
     } catch (e) {
       throw Error(`초기화에 실패했습니다 ${e.message}`);

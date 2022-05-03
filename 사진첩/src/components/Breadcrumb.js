@@ -12,6 +12,7 @@ export default class Breadcrumb {
     this.state = nextState;
     this.render();
   }
+
   render() {
     this.$target.innerHTML = `<div class="nav-item">root</div>${this.state
       .map(
