@@ -27,13 +27,13 @@ export default class TodosList {
             (todo) =>
               `<li class="Todo" data-todo-id="${
                 todo.id
-              }"><div><input type="checkbox" ${
+              }"><div><input data-action="onUpdate" type="checkbox" ${
                 todo.done ? "checked" : ""
               } /><span style="${
                 todo.done ? "text-decoration: line-through" : ""
               }">${
                 todo.todo
-              }</span></div><button type="button">Remove</button></li>`
+              }</span></div><button data-action="onRemove" type="button">Remove</button></li>`
           )
           .join("")
       : "";
