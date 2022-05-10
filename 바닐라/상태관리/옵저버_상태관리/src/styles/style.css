@@ -1,0 +1,34 @@
+html,
+body,
+#App {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  list-style: none;
+}
+
+/* Counter */
+.Counter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.Counter > button {
+  cursor: pointer;
+  outline: none;
+  background: none;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 0 20px;
+}
+
+.Counter > button:hover {
+}
+
+.Counter > h1 {
+  font-size: 25px;
+}
