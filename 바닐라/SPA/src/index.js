@@ -1,5 +1,5 @@
-import App from "./App.js";
+import App from './App.js';
 
 window.onload = () => {
-  new App({ $app: document.querySelector(".App") });
+  new App({ app: document.querySelector('.root') });
 };

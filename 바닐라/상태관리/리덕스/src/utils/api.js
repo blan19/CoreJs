@@ -1,17 +1,15 @@
-const API_END_POINT = 'https://jsonplaceholder.typicode.com';
+const API_END_POINT = "https://jsonplaceholder.typicode.com";
 
 export default {
-  async getPosts() {
+  async getPostsByAll() {
     try {
-      const res = await fetch(`${API_END_POINT}/posts`);
+      const res = await fetch(`${API_END_POINT}/posts`, { method: "GET" });
 
       if (!res.ok) {
         throw new Error(`에러가 발생했습니다 ${e.message}`);
       }
 
-      const data = await res.json();
-
-      return data;
+      return await res.json();
     } catch (e) {
       throw new Error(`에러가 발생했습니다 ${e.message}`);
     }
