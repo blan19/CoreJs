@@ -1,0 +1,16 @@
+.NavBar {
+  width: 100%;
+  height: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  background-color: var(--color-bgColor);
+}
+
+.NavBar > h1 {
+  margin-left: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-primaryColor);
+}

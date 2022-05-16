@@ -1,8 +1,27 @@
 .Main {
+  margin: 3.5rem 0;
 }
 
-.Main-Header {
+.Main > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 0 1rem;
 }
 
-.Main-Posts {
+.Main > ul > li {
+  background-color: var(--color-subColor);
+  color: var(--color-fontColor);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.Main > ul > li > h1 {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.Main > ul > li > p {
+  padding: 0.5rem;
+  font-size: 1.25rem;
 }

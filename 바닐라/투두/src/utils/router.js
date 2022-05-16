@@ -1,11 +1,7 @@
-const ON_ROUTE_CHANGE = 'ON_ROUTE_CHANGE';
+const ON_ROUTE_CHANGE = "ON_ROUTE_CHANGE";
 
 const routerInit = (callback) => {
   window.addEventListener(ON_ROUTE_CHANGE, () => {
-    callback();
-  });
-
-  window.addEventListener('popstate', () => {
     callback();
   });
 };

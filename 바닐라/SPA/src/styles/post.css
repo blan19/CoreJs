@@ -1,0 +1,30 @@
+.Post {
+  padding: 3rem 2rem;
+}
+
+/* * Post-Info */
+
+.Post-Info {
+  margin-bottom: 3rem;
+}
+
+.Post-Info > p {
+  font-size: 1.65rem;
+  margin-bottom: 0.5rem;
+}
+.Post-Info > span {
+  font-size: 1.25rem;
+  color: #7b8185;
+}
+
+/* * Post-Contents */
+
+.Post-Contents > h1 {
+  font-size: 3.5rem;
+}
+
+.Post-Contents > p {
+  margin-top: 2rem;
+  font-size: 1.85rem;
+  font-weight: lighter;
+}

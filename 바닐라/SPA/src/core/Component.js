@@ -20,9 +20,13 @@ export default class Component {
     if (props.store instanceof Store) {
       props.store.$events.subscribe('stateChange', () => {
         self.render();
-        self.setEvent();
         self.mounted();
       });
     }
+
+    this.initState();
+    self.setEvent();
   }
+
+  initState() {}
 }

@@ -1,3 +1,5 @@
+import '../../styles/navbar.css';
+
 export default class NavBar {
   constructor({ target }) {
     this.$target = target;
