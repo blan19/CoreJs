@@ -4,6 +4,8 @@
 
 2. 프록시 패턴
 
+3. MVC 패턴
+
 # 바닐라 Js - Small Project
 
 1. 상태관리
