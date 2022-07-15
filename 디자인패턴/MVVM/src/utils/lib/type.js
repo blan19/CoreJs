@@ -1,4 +1,4 @@
-const type = (target, type) => {
+const typeChecker = (target, type) => {
   if (typeof type == "string") {
     if (typeof target != type) throw `invalid type ${target} : ${type}`;
   } else if (!(target instanceof type))
@@ -7,4 +7,4 @@ const type = (target, type) => {
   return target;
 };
 
-export default type;
+export default typeChecker;
